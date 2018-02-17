@@ -31,9 +31,9 @@ Hallo {{ booking.user.first_name }},<br>
 <p>du hast das folgende Boot reserviert:</p>
 
 <p>
- Boot: <a href='http://mein.svpb.de/boote/boot/{{ booking.boat.pk }}'>{{ booking.boat.type.name }} <i>"{{ booking.boat.name }}"</i></a><br>
- Datum: {{ booking.date }}  <br>
- Uhrzeit: {{ booking.time_from }} - {{ booking.time_to }}
+ Boot: &nbsp; <a href='http://mein.svpb.de/boote/boot/{{ booking.boat.pk }}'>{{ booking.boat.type.name }} <i>"{{ booking.boat.name }}"</i></a><br>
+ Datum:&nbsp; {{ booking.date }}  <br>
+ Uhrzeit:&nbsp;{{ booking.time_from }} - {{ booking.time_to }}
 </p>
 
 {% if booking.boat.briefing %}
@@ -49,18 +49,18 @@ Hallo {{ booking.user.first_name }},<br>
 <ul>
 
 <li>Bitte sei pünktlich. Wenn das Boot ab
- {{ booking.time_from }} nicht genutzt wird, 
+ {{ booking.time_from }} Uhr nicht genutzt wird, 
  verfällt die Reservierung.</li>
 
 <li>Beachte <ahref='http://mein.svpb.de/static/boote/AlgemRegelnVereinsboote.pdf'>Allgemeine Regeln zur Nutzung der Vereinsboote</a></li>
 
-<li>Wenn du das Boot doch nicht nutzen möchtest,
+<li>Wenn du das Boot nicht nutzen möchtest,
  storniere bitte deine Reservierung unter 
  <a href='http://mein.svpb.de'>mein.svpb.de</a>
-  spätestens 2 Tage vorher.</li>
+  bis möglichst 2 Tage vorher.</li>
 
 <li>Eine zusätzliche Eintragung in 
-die Nutzungsliste im Bootshaus entfällt.</li>
+die Papier-Listen im Vereinshaus entfällt.</li>
 
 <li>Mängel am Boot melde bitte über unser
  Reservierungssystem unter 

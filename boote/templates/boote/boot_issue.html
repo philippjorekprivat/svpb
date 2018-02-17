@@ -9,7 +9,7 @@ Schadensmeldungen {{ boot.name }} ({{ boot.type.name }})
 
 {% block content %}
 <p>
- <a href='/boote/boot/{{ boot.pk }}'>&lt; zurück zum {{ boot.name }}</a>
+ <a href='/boote/boot/{{ boot.pk }}'>&lt; zurück ({{ boot.name }})</a>
 </p>
 
 {% if issues %}
@@ -46,12 +46,11 @@ Schadensmeldungen {{ boot.name }} ({{ boot.type.name }})
 {% endfor %}
 </table>
 {% else %}
-    <p>Es liegen <span style="color: rgb(0, 161, 30)">keine</span> offene Schadensmeldungen fuer "{{ boot.name }}" vor.</p>
+    <p>Es liegen <span style="color: rgb(0, 161, 30)">keine</span> offene Schadensmeldungen für "{{ boot.name }}" vor.</p>
 {% endif %}
 
 <h2>Neue Schadensmeldungen</h2>
-<p>Wenn du Beschedigungen an Bord siehst oder selber was beschedigt hast, bzw. notwendige Reparaturen durchzuführen sind, melde das bitte hier. Bei kritischen Problemen mit dem Segelschiff
-bitte sofort den Bootspaten informieren.</p>
+<p>Bitte trage hier Beschädigungen, Probleme oder notwendige Reparaturen ein, egal ob diese durch Dich verursacht worden sind oder nicht. Bei kritischen Problemen mit dem Boot informiere bitte sofort den Bootspaten.</p>
  
 {% crispy form_issue %}
 
